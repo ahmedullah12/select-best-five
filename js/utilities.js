@@ -13,8 +13,14 @@ function getTextElementValueById(elementId, PlayerExpensesAmount){
 
 function getPlayerExpenses(playerFieldId, textElementId){
     const perPlayerCost = getInputValueById(playerFieldId);
+    if(isNaN(perPlayerCost) === true){
+        return alert('Please input the amounts in number');
+    }
+    const playerNumberString = document.getElementById('selected-players').innerText;
+    const playerNumber = parseInt(playerNumberString);
+    console.log(playerNumber);
     
-    const totalPlayerCost = perPlayerCost * 5;
+    const totalPlayerCost = perPlayerCost * playerNumber;
     getTextElementValueById(textElementId, totalPlayerCost);
     return totalPlayerCost;
 }

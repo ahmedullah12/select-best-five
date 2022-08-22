@@ -1,3 +1,4 @@
+//Selected Player List
 const nameListArray = [];
 
 function addPlayerName(names){
@@ -23,15 +24,13 @@ function getPlayerName(element){
 
     const nameObj = {playerName: playerName};
     nameListArray.push(nameObj);
+    if(nameListArray.length > 5){
+        return alert('You can not add more than 5 players');
+    }
 
-    
     document.getElementById('selected-players').innerText = nameListArray.length;
     addPlayerName(nameListArray);
 }
-
-
-
-
 
 // budget section calculation
 
@@ -45,10 +44,11 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     
     const managerCost = getInputValueById('manager-cost');
     const coachCost = getInputValueById('coach-cost');
+    if(isNaN(managerCost) === true || isNaN(coachCost) === true){
+        return alert('Please input the amounts in number')
+    }
 
     const totalCost = totalPlayerCost + managerCost + coachCost;
 
     getTextElementValueById('total-cost', totalCost);
-
-
 })
