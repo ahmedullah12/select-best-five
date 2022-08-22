@@ -31,7 +31,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Lionel Messi</h5>
                               <p class="card-text">705 Goals . 120 Assists</p>
-                              <button class="btn btn-primary px-5 w-75  rounded-0">Select</button>
+                              <button class="btn btn-primary select-button px-5 w-75  rounded-0" onclick="getPlayerName(this); this.disabled = true;">Select</button>
                             </div>
                           </div>
                     </div>
@@ -41,7 +41,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Cristiano Ronaldo</h5>
                               <p class="card-text">700 Goals . 102 Assists</p>
-                              <button class="btn btn-primary px-5 w-75  rounded-0">Select</button>
+                              <button class="btn btn-primary select-button px-5 w-75  rounded-0" onclick="getPlayerName(this); this.disabled = true;">Select</button>
                             </div>
                           </div>
                     </div>
@@ -51,7 +51,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Neymar Jr.</h5>
                               <p class="card-text">504 Goals . 67 Assists</p>
-                              <button class="btn btn-primary px-5 w-75  rounded-0">Select</button>
+                              <button class="btn btn-primary select-button px-5 w-75  rounded-0" onclick="getPlayerName(this); this.disabled = true;">Select</button>
                             </div>
                           </div>
                     </div>
@@ -61,7 +61,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Luis Suarez</h5>
                               <p class="card-text">557 Goals . 77 Assists</p>
-                              <button class="btn btn-primary px-5 w-75  rounded-0">Select</button>
+                              <button class="btn btn-primary select-button px-5 w-75  rounded-0" onclick="getPlayerName(this); this.disabled = true;">Select</button>
                             </div>
                           </div>
                     </div>
@@ -71,7 +71,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Edinson Cavani</h5>
                               <p class="card-text">497 Goals . 65 Assists</p>
-                              <button class="btn btn-primary px-5 w-75  rounded-0">Select</button>
+                              <button class="btn btn-primary select-button px-5 w-75  rounded-0" onclick="getPlayerName(this); this.disabled = true;">Select</button>
                             </div>
                           </div>
                     </div>
@@ -81,7 +81,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Robert Lewandowski</h5>
                               <p class="card-text">505 Goals . 60 Assists</p>
-                              <button class="btn btn-primary px-5 w-75  rounded-0">Select</button>
+                              <button class="btn btn-primary select-button px-5 w-75  rounded-0" onclick="getPlayerName(this); this.disabled = true;">Select</button>
                             </div>
                           </div>
                     </div>
@@ -91,7 +91,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Sergio Aguero</h5>
                               <p class="card-text">420 Goals . 70 Assists</p>
-                              <button class="btn btn-primary px-5 w-75  rounded-0">Select</button>
+                              <button class="btn btn-primary select-button px-5 w-75  rounded-0" onclick="getPlayerName(this); this.disabled = true;">Select</button>
                             </div>
                           </div>
                     </div>
@@ -101,7 +101,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Antoine Griezmann</h5>
                               <p class="card-text">390 Goals . 52 Assists</p>
-                              <button class="btn btn-primary px-5 w-75  rounded-0">Select</button>
+                              <button class="btn btn-primary select-button px-5 w-75  rounded-0" onclick="getPlayerName(this); this.disabled = true;">Select</button>
                             </div>
                           </div>
                     </div>
@@ -111,20 +111,16 @@
                             <div class="card-body">
                               <h5 class="card-title">Kylian Mbappe</h5>
                               <p class="card-text">350 Goals . 47 Assists</p>
-                              <button  class="btn btn-primary  px-5 w-75  rounded-0">Select</button>
+                              <button  class="btn btn-primary select-button px-5 w-75  rounded-0" onclick="getPlayerName(this); this.disabled = true;">Select</button>
                             </div>
                           </div>
                     </div>
                   </div>
                   <div class="row col h-100 mt-5  text-white ">
                     <div class="col-12 bg-black pt-5 text-center">
-                        <h4 class="mb-5">Selected-V</h4>
-                        <ol class="mt-5 mb-5 text-start ms-2">
-                            <li class="mb-2 ps-3">Player-1</li>
-                            <li class="mb-2 ps-3">Player-2</li>
-                            <li class="mb-2 ps-3">Player-3</li>
-                            <li class="mb-2 ps-3">Player-4</li>
-                            <li class="mb-2 ps-3">Player-5</li>
+                        <h4 class="mb-5">Selected - <span id="selected-players">0</span></h4>
+                        <ol id="name-list" class="mt-5 mb-5 text-start ms-2">
+                            
                         </ol>
                     </div>
                     <div class="col bg-black mt-5 pt-5 pb-5">

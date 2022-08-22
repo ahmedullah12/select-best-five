@@ -18,3 +18,6 @@ function getPlayerExpenses(playerFieldId, textElementId){
     getTextElementValueById(textElementId, totalPlayerCost);
     return totalPlayerCost;
 }
+
+
+
